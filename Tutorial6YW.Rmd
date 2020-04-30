@@ -29,3 +29,10 @@ p2 = ggplot(data, aes(x= x, y = y)) +
 geom_point() grid.arrange(p1, p2)
 # Creating a data frame
 ```
+
+# Figures
+```{r}
+mtcars %>% select(cyl, hp) %>% ggplot() +
+  geom_line(aes(x = cyl, y = hp))
+```
+
